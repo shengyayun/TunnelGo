@@ -1,0 +1,26 @@
+tunnels:
+  elasticsearch:
+    auth: /path/to/.ssh/id_rsa
+    local: 0.0.0.0:9200
+    server: root@182.92.193.203:22
+    remote: es-cn-v641aso9d001eihdi.elasticsearch.aliyuncs.com:9200
+  memcached_alpha:
+    auth: /path/to/.ssh/id_rsa
+    local: 0.0.0.0:11211
+    server: root@182.92.193.203:22
+    remote: m-2ze004bc40e88134.memcache.rds.aliyuncs.com:11211
+  memcached_beta:
+    auth: /path/to/.ssh/id_rsa
+    local: 0.0.0.0:11212
+    server: root@182.92.193.203:22
+    remote: m-2zea42ceb0265e94.memcache.rds.aliyuncs.com:11211
+  mysql:
+    auth: /path/to/.ssh/id_rsa
+    local: 0.0.0.0:3306
+    server: root@182.92.193.203:22
+    remote: rm-2zerbnxg7919j4liu.mysql.rds.aliyuncs.com:3306
+  kafka:
+    auth: /path/to/.ssh/id_rsa
+    local: 0.0.0.0:9092
+    server: root@182.92.193.203:22
+    remote: 192.168.0.226:9092
